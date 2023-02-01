@@ -79,7 +79,7 @@ function App() {
         {/* map over books state to display each book in <li> */}
         {books.map( (book) => {
           return (
-            <li key={book.key}>
+            <li>
               <p>{book.name} 📕</p>
               <button onClick={() => handleRemoveBook(book.key)}>Remove</button>
             </li>
